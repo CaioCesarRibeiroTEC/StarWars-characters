@@ -1,0 +1,294 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+/* header */
+
+.projec-container {
+    width: 100%;
+    background-image: url('../../assets/universo-bg.jpg');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-container{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoicon {
+    width: 60%;
+    height: 90px;
+    cursor: pointer;
+}
+
+.logo-span{
+    font-family: 'Star Wars', sans-serif;
+    font-size: 2rem;
+    cursor: pointer; 
+}
+
+.social-media {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.img-icon {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.img-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container:hover {
+    background-color: gold;
+}
+
+.icon-whats {
+    width: 52px;
+}
+
+
+
+
+
+/* main */
+
+.main-cantainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h1 {
+    font-family: 'Star Wars', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: gold;
+    font-weight: 300;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.cards {
+    width: 350px;
+    height: 470px;
+    background-position: 50% 50%;  
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.character-name-container {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.character-name{
+    font-family: 'Star Wars', sans-serif;
+    color: gold;
+    font-size: 1rem;
+}
+
+.modal {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+.modal-content {
+    width: 30vw;
+    height: 60vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.character-details {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gold;
+}
+
+.buttons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 15%;
+  }
+  
+button {
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: gold;
+}
+
+#back-button {
+    visibility: hidden;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyrigth {
+    font-weight: 500;
+}
+
+@media (max-width: 1200px){
+    .logoicon {
+        width: 40%;
+        height: 70px;
+        cursor: pointer;
+    }
+
+    .logo-span{
+        font-size: 1.5rem;
+    }
+
+    .social-media {
+        width: 30%;       
+    }
+}
+
+@media (max-width: 870px){
+    .modal-content {
+        width: 80vw;
+        height: 400px;
+
+    }
+}
+
+@media (max-width: 460px){
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .social-media {
+        width: 60%;
+    }
+}
+
+@media (max-width: 350px){
+    h1 {
+        font-size: 20px;
+    }
+
+    .social-media {
+        width: 80%;
+    }
+
+    .modal-content {
+        width: 100vw;
+        height: 500px;
+
+    }
+
+    .logo-span{
+        font-size: 1rem;
+    }
+
+    .logoicon {
+        width: 30%;
+        height: 70px;
+        cursor: pointer;
+    }
+}
